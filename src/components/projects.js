@@ -8,6 +8,7 @@ import recipe from "../images/recipe.png";
 import team from "../images/team.png";
 import notfound from "../images/notfound.png";
 import tracker from "../images/tracker.png";
+import buttons from "../images/button-component.png";
 
 const Projects = () => {
   useEffect(() => {
@@ -282,6 +283,64 @@ const Projects = () => {
               </a>
               <a
                 href="https://github.com/LorenaGarcia/404-not-found"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <ButtonCode>Code</ButtonCode>
+              </a>
+            </div>
+          </ContainerText>
+        </Container>
+
+        <Container className="project html css">
+          <div>
+            <Image
+              src={
+                "https://raw.githubusercontent.com/LorenaGarcia/input-component/master/public/imageHome.jpg"
+              }
+            />
+          </div>
+          <ContainerText>
+            <Hash>#HTML #CSS #React </Hash>
+            <TitleExample>Example / Input Component</TitleExample>
+            <Description>Web site created using React</Description>
+            <div>
+              <a
+                href="https://lorenagarcia.github.io/input-component/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <ButtonDemo>Demo</ButtonDemo>
+              </a>
+              <a
+                href="https://github.com/LorenaGarcia/input-component"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <ButtonCode>Code</ButtonCode>
+              </a>
+            </div>
+          </ContainerText>
+        </Container>
+
+        <Container className="project html css">
+          <div>
+            <Image src={buttons} />
+          </div>
+          <ContainerText>
+            <Hash>#HTML #CSS #React </Hash>
+            <TitleExample>Example / Button Component</TitleExample>
+            <Description>Web site created using React</Description>
+            <div>
+              <a
+                href="https://lorenagarcia.github.io/button-component/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <ButtonDemo>Demo</ButtonDemo>
+              </a>
+              <a
+                href="https://github.com/LorenaGarcia/button-component"
                 rel="noreferrer"
                 target="_blank"
               >
