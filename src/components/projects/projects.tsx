@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import * as Styled from "./projects.styles";
-import { PROJECTS } from "./projects.constants";
+import { PROJECTS, TAGS} from "./projects.constants";
 
 const Projects = () => {
   const [filter, setFilter] = useState("all");
@@ -15,14 +15,12 @@ const Projects = () => {
       ? PROJECTS
       : PROJECTS.filter((project) => project.tags.includes(filter));
 
-  const tags = ["all", "html", "css", "react", "styled", "context"];
-
   return (
     <Styled.Container>
       <Styled.Header>
         <Styled.Title>Projects ({filteredProjects.length})</Styled.Title>
         <Styled.FilterContainer>
-          {tags.map((tag) => (
+          {TAGS.map((tag) => (
             <Styled.ButtonHash
               key={tag}
               $active={filter === tag}

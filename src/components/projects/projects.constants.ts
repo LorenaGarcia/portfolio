@@ -8,7 +8,7 @@ import notfound from "../../images/notfound.png";
 import tracker from "../../images/tracker.png";
 import buttons from "../../images/button-component.png";
 
-export const PROJECTS = [
+const PROJECTS = [
   {
     title: "Expense Tracker",
     tags: ["react", "context"],
@@ -100,3 +100,7 @@ export const PROJECTS = [
     hash: "#HTML #CSS #React"
   }
 ];
+
+const TAGS = ["all", "html", "css", "react", "styled", "context"];
+
+export { PROJECTS, TAGS };

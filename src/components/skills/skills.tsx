@@ -1,26 +1,9 @@
 "use client";
 import React from "react";
 import * as Styled from "./skills.styles";
+import { SKILL_LIST } from "./skills.constants";
 
 const Skills = () => {
-  const skillsList = [
-    "JavaScript (ES6+)",
-    "React.js",
-    "Redux / Context API",
-    "Next.js",
-    "React Native",
-    "TypeScript",
-    "Tailwind CSS",
-    "HTML5 / CSS3",
-    "Node.js",
-    "PHP",
-    "Laravel",
-    "Zend Framework",
-    "Python",
-    "PostgreSQL",
-    "REST APIs",
-    "AWS",
-  ];
 
   return (
     <Styled.Container>
@@ -38,7 +21,7 @@ const Skills = () => {
         </Styled.SubHeader>
 
         <Styled.SkillsWrapper>
-          {skillsList.map((skill, index) => (
+          {SKILL_LIST.map((skill, index) => (
             <Styled.SkillTag key={index}>{skill}</Styled.SkillTag>
           ))}
         </Styled.SkillsWrapper>
